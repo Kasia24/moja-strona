@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { Menu, X } from "react-feather"; // Jeżeli używasz ikonek z react-feather
+import { Menu, X, Search, User, ShoppingCart } from "react-feather"; // Import ikon
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false); // Dodajemy stan do kontrolowania otwarcia menu
+  const [menuOpen, setMenuOpen] = useState(false); // Stan do kontrolowania otwarcia menu
 
   return (
     <div className="min-h-screen bg-black text-white">
       <nav className="flex items-center justify-between p-4 shadow-md relative">
+        {/* Logo */}
         <div className="text-2xl font-bold text-green-500">Greenlandia</div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 items-center">
           <a href="/" className="text-white hover:text-green-500">
             Sklep
           </a>
@@ -20,6 +21,11 @@ function App() {
           <a href="/contact" className="text-white hover:text-green-500">
             Kontakt
           </a>
+
+          {/* Ikony na desktopie */}
+          <Search className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
+          <User className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
+          <ShoppingCart className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
         </div>
 
         {/* Mobile menu button */}
@@ -46,6 +52,13 @@ function App() {
             <a href="/contact" className="text-white hover:text-green-500">
               Kontakt
             </a>
+
+            {/* Mobile Icons */}
+            <div className="flex space-x-4 mt-4">
+              <Search className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
+              <User className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
+              <ShoppingCart className="w-6 h-6 text-white cursor-pointer hover:text-green-500" />
+            </div>
           </div>
         )}
       </nav>
