@@ -31,7 +31,7 @@ function App() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden p-2 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? (
@@ -43,7 +43,7 @@ function App() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-black shadow-md z-10 flex flex-col items-start p-4 space-y-2 md:hidden">
+          <div className="absolute top-16 left-0 w-full bg-black shadow-md z-20 flex flex-col items-start p-4 space-y-2 md:hidden">
             <a href="/" className="text-white hover:text-green-500">
               Sklep
             </a>
