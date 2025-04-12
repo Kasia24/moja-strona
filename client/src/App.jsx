@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, Search, User, ShoppingCart } from "react-feather"; // Import ikon
-//import "./index.css"; // Importujemy plik CSS
+import "./index.css"; // Importujemy plik CSS
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false); // Stan do kontrolowania otwarcia menu
