@@ -1,7 +1,21 @@
+/* --- client/src/index.css --- */
+
+/* Import Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Styl globalny */
 body {
-  @apply bg-black;
+  @apply bg-black text-white font-sans antialiased;
+}
+
+/* Linki */
+a {
+  @apply transition-colors duration-300;
+}
+
+/* Przycisk hamburgera (opcjonalnie do dopracowania wyglądu) */
+button {
+  @apply focus:outline-none;
 }
