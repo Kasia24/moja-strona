@@ -8,6 +8,8 @@
 /* Styl globalny */
 body {
   @apply bg-black text-white font-sans antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 /* Linki */
@@ -15,7 +17,34 @@ a {
   @apply transition-colors duration-300;
 }
 
-/* Przycisk hamburgera (opcjonalnie do dopracowania wyglądu) */
+/* Przycisk hamburgera */
 button {
   @apply focus:outline-none;
+}
+
+/* Dostosowanie dla małych ekranów (mobile-first) */
+@media (max-width: 768px) {
+  nav {
+    padding: 8px;
+  }
+  .navbar-links {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar-links a {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+/* Dodatkowe stylowanie ikon */
+.icon {
+  @apply w-6 h-6 text-white cursor-pointer hover:text-green-500;
+}
+
+/* Animacja przycisku hamburgera */
+button:focus {
+  outline: none;
 }
