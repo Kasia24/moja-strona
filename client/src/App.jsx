@@ -3,7 +3,7 @@ import { Menu } from "lucide-react";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <nav className="flex items-center justify-between p-4 shadow-md">
         <div className="text-2xl font-bold text-green-700">Greenlandia</div>
         <button className="md:hidden p-2">
